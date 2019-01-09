@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_Shamaz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree BG" translatesAutoresizingMaskIntoConstraints="NO" id="Vuo-pz-sem">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJt-mt-b4b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OJf-Zn-LBN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Press &quot;PAST&quot; or &quot;FUTURE&quot; to start the game!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZM-Q6-8cY">
+                                            <rect key="frame" x="53.5" y="218" width="268" height="128"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="128" id="cit-2d-bTF"/>
+                                                <constraint firstAttribute="width" constant="268" id="kQI-d1-NuD"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAMAZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwD-pu-rlS">
+                                            <rect key="frame" x="94.5" y="103" width="186" height="65"/>
+                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="42"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share your Shamazing Stories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96c-Hj-sCc">
+                                            <rect key="frame" x="53.5" y="166.5" width="268" height="31"/>
+                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   enter 2 to 12 Players" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOt-f9-LQY">
+                                            <rect key="frame" x="105.5" y="223.5" width="164" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="3e5-lX-jWh"/>
+                                            </constraints>
+                                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOj-MX-643">
+                                            <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="a7X-C7-fgG"/>
+                                                <constraint firstAttribute="width" constant="80" id="qrd-lX-sas"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="enter button"/>
+                                            <connections>
+                                                <action selector="enterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGr-6I-KGf"/>
+                                            </connections>
+                                        </button>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyh-2o-C44">
+                                            <rect key="frame" x="245" y="397.5" width="120" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="72D-9N-8Z8"/>
+                                                <constraint firstAttribute="width" constant="120" id="EN9-mF-y9c"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="28"/>
+                                            <size key="titleShadowOffset" width="1" height="1"/>
+                                            <state key="normal" title="FUTURE" backgroundImage="right arrow">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="futureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OtH-Rm-rEW"/>
+                                            </connections>
+                                        </button>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LlD-qU-4o8">
+                                            <rect key="frame" x="20" y="587" width="78" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="XMT-1e-fws"/>
+                                                <constraint firstAttribute="width" constant="78" id="g5A-Iw-6QT"/>
+                                            </constraints>
+                                            <size key="titleShadowOffset" width="1" height="1"/>
+                                            <state key="normal" title="RESET" backgroundImage="reset button">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MoH-bp-nPk"/>
+                                            </connections>
+                                        </button>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khf-LH-dSr">
+                                            <rect key="frame" x="10" y="397.5" width="120" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="b0h-Ms-i6S"/>
+                                                <constraint firstAttribute="width" constant="120" id="kZw-Ko-LmY"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="33"/>
+                                            <size key="titleShadowOffset" width="1" height="1"/>
+                                            <state key="normal" title="PAST" backgroundImage="left arrow">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="pastButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1sL-fv-xHz"/>
+                                            </connections>
+                                        </button>
+                                        <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Next Player #1" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-qE-MfA">
+                                            <rect key="frame" x="180" y="555" width="160" height="80"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="Aod-Vd-gMh"/>
+                                                <constraint firstAttribute="width" constant="160" id="AsX-6U-IS2"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LlD-qU-4o8" firstAttribute="leading" secondItem="OJf-Zn-LBN" secondAttribute="leading" constant="20" id="33l-Rn-Xdo"/>
+                                        <constraint firstItem="MwD-pu-rlS" firstAttribute="top" secondItem="OJf-Zn-LBN" secondAttribute="top" constant="103" id="7hc-gk-Fbg"/>
+                                        <constraint firstItem="Tyh-2o-C44" firstAttribute="centerY" secondItem="OJf-Zn-LBN" secondAttribute="centerY" constant="114" id="Aj4-QB-xiG"/>
+                                        <constraint firstItem="Khf-LH-dSr" firstAttribute="centerY" secondItem="OJf-Zn-LBN" secondAttribute="centerY" constant="114" id="AuQ-WE-ODV"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZXb-qE-MfA" secondAttribute="bottom" constant="32" id="AyH-QM-0Mo"/>
+                                        <constraint firstItem="dZM-Q6-8cY" firstAttribute="top" secondItem="MwD-pu-rlS" secondAttribute="bottom" constant="50" id="FyF-d7-ai2"/>
+                                        <constraint firstItem="MwD-pu-rlS" firstAttribute="centerX" secondItem="OJf-Zn-LBN" secondAttribute="centerX" id="K15-EY-9cm"/>
+                                        <constraint firstItem="YOt-f9-LQY" firstAttribute="top" secondItem="96c-Hj-sCc" secondAttribute="bottom" constant="26" id="LC4-hA-3Nn"/>
+                                        <constraint firstAttribute="trailing" secondItem="Tyh-2o-C44" secondAttribute="trailing" constant="10" id="Rs4-Q4-1k7"/>
+                                        <constraint firstItem="ZXb-qE-MfA" firstAttribute="leading" secondItem="LlD-qU-4o8" secondAttribute="trailing" constant="82" id="V3Y-0k-ydP"/>
+                                        <constraint firstItem="Khf-LH-dSr" firstAttribute="leading" secondItem="OJf-Zn-LBN" secondAttribute="leading" constant="10" id="V63-xq-Nk2"/>
+                                        <constraint firstItem="DOj-MX-643" firstAttribute="centerY" secondItem="OJf-Zn-LBN" secondAttribute="centerY" id="Y2g-qk-qT9"/>
+                                        <constraint firstItem="96c-Hj-sCc" firstAttribute="centerX" secondItem="YOt-f9-LQY" secondAttribute="centerX" id="asc-2c-eKq"/>
+                                        <constraint firstItem="DOj-MX-643" firstAttribute="top" secondItem="YOt-f9-LQY" secondAttribute="bottom" constant="40" id="dv3-Kc-eQA"/>
+                                        <constraint firstItem="DOj-MX-643" firstAttribute="centerX" secondItem="OJf-Zn-LBN" secondAttribute="centerX" id="euQ-vG-ATh"/>
+                                        <constraint firstItem="dZM-Q6-8cY" firstAttribute="centerX" secondItem="MwD-pu-rlS" secondAttribute="centerX" id="hHZ-Ew-wJK"/>
+                                        <constraint firstAttribute="bottom" secondItem="LlD-qU-4o8" secondAttribute="bottom" constant="20" id="mKV-Wr-Ign"/>
+                                        <constraint firstItem="YOt-f9-LQY" firstAttribute="centerX" secondItem="DOj-MX-643" secondAttribute="centerX" id="t9h-Y0-e12"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZXb-qE-MfA" secondAttribute="trailing" constant="35" id="xhs-o7-fRe"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Vuo-pz-sem" secondAttribute="bottom" id="03x-H8-7cd"/>
+                            <constraint firstItem="fJt-mt-b4b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="43N-lK-O3E"/>
+                            <constraint firstAttribute="bottom" secondItem="fJt-mt-b4b" secondAttribute="bottom" id="Dwb-R2-lM1"/>
+                            <constraint firstItem="Vuo-pz-sem" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I1v-DX-0Qa"/>
+                            <constraint firstItem="fJt-mt-b4b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RaT-5p-ogz"/>
+                            <constraint firstItem="fJt-mt-b4b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sfd-Fx-4j0"/>
+                            <constraint firstItem="Vuo-pz-sem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i4c-iT-ux9"/>
+                            <constraint firstItem="Vuo-pz-sem" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="q6V-za-v3r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="futureButton" destination="Tyh-2o-C44" id="NFM-Lj-9PP"/>
+                        <outlet property="pastButton" destination="Khf-LH-dSr" id="B2p-vu-AAG"/>
+                        <outlet property="resetButton" destination="LlD-qU-4o8" id="wE7-tD-I4f"/>
+                        <outlet property="startButton" destination="DOj-MX-643" id="2Hj-WD-o30"/>
+                        <outlet property="subtitle" destination="96c-Hj-sCc" id="cSa-UI-wPf"/>
+                        <outlet property="textFieldForNumberPlayer" destination="YOt-f9-LQY" id="hmy-36-Q2m"/>
+                        <outlet property="textFieldNextPlayer" destination="ZXb-qE-MfA" id="ndJ-SD-Joc"/>
+                        <outlet property="textFieldStories" destination="dZM-Q6-8cY" id="ty5-q5-2mb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.799999999999997" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="enter button" width="1280" height="1280"/>
+        <image name="left arrow" width="1280" height="895"/>
+        <image name="reset button" width="1280" height="1021"/>
+        <image name="right arrow" width="1280" height="895"/>
+        <image name="tree BG" width="5456" height="3632"/>
+    </resources>
+</document>
